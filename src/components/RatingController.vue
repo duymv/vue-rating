@@ -3,7 +3,7 @@
     <h1>{{ vue_rating }}</h1>
     <span>{{ username }} </span>
     <input type="text" placeholder="Enter your review">
-    <button id="submit_btn">Submit your review</button>
+    <button v-on:click="sendReview">Submit your review</button>
   </div>
 </template>
 
@@ -14,6 +14,11 @@ export default {
     msg: String,
     vue_rating: String,
     username: String
+  },
+  methods: {
+    sendReview: function (event) {
+      alert(this.username+', your review is submitted!');
+    }
   }
 };
 

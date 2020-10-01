@@ -1,17 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <RatingController vue_rating="Vue Rating" username="Jonny" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import RatingController from "./components/RatingController.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    RatingController
   }
 };
 </script>

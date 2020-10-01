@@ -3,6 +3,7 @@
     <h1>{{ vue_rating }}</h1>
     <span>{{ username }} </span>
     <input type="text" placeholder="Enter your review">
+    <button id="submit_btn">Submit your review</button>
   </div>
 </template>
 
@@ -15,6 +16,7 @@ export default {
     username: String
   }
 };
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

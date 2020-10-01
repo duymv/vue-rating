@@ -1,5 +1,8 @@
 # vue-rating
 
+
+This is a vue rating component. Embed to your website quickly.
+
 ## Project setup
 ```
 npm install

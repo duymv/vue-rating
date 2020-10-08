@@ -1,9 +1,12 @@
 <template>
   <div class="hello">
     <h1>{{ vue_rating }}</h1>
-    <span>{{ username }} </span>
-    <input type="text" placeholder="Enter your review">
-    <button v-on:click="sendReview">Submit your review</button>
+      <span>{{ username }} </span>
+      <input type="text" placeholder="Enter your review">
+    <div class="form-btn">
+     <button type="button" class="btn btn-primary"
+             v-on:click="sendReview">Submit your review</button>
+    </div>
   </div>
 </template>
 
@@ -40,4 +43,9 @@ li {
 a {
   color: #42b983;
 }
+
+.form-btn{
+  margin-top: 15px;
+}
+
 </style>

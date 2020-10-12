@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ vue_rating }}</h1>
       <span>{{ username }} </span>
-      <input type="text" placeholder="Enter your review">
+      <input type="text" v-model="inputValue" placeholder="Enter your review">
     <div class="form-btn">
      <button type="button" class="btn btn-primary"
              v-on:click="sendReview">Submit your review</button>
@@ -19,8 +19,13 @@ export default {
     username: String
   },
   methods: {
-    sendReview: function (event) {
-      alert(this.username+', your review is submitted!');
+    sendReview: function () {
+      var inputVal= this.inputValue;
+      if (inputVal.trim()){
+        alert(this.username+', your review is submitted!');
+      }else {
+        alert('Review message is required!');
+      }
     }
   }
 };
